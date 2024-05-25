@@ -6,24 +6,32 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form>
-        <label for="senha">Senha</label>
-        <input type="text" id="senha" placeholder="Digite sua senha aqui!" required="true"/>
-
-        <label for="confirmaSenha">Confirma senha</label>
-        <input type="text" id="confirmaSenha" placeholder="Digite novamente sua senha!" required="true"/>
+    <form class="formulario">
+        <div class="input-senha">
+            <label for="senha">Senha</label>
+            <input type="text" id="senha" placeholder="Digite sua senha aqui!" required="true"/>
+    
+            <label for="confirmaSenha">Confirma senha</label>
+            <input type="text" id="confirmaSenha" placeholder="Digite novamente sua senha!" required="true"/>
+        </div>
         
-        <h3>Qual a melhor forma de contato?</h3>
-        <label for="Telefone">Telefone</label>
-        <input type="radio" id="telefone" required name="metodo__contato" value="telefone"/>
+        <div class="input-contato">
+            <h3>Qual a melhor forma de contato?</h3>
+            <label for="Telefone">Telefone</label>
+            <input type="radio" id="telefone" required name="metodo__contato" value="telefone"/>
+            
+            <label for="Whatsapp">Whatsapp</label>
+            <input type="radio" id="Whatsapp" required name="metodo__contato" value="Whatsapp"/>
+        </div>
         
-        <label for="Whatsapp">Whatsapp</label>
-        <input type="radio" id="Whatsapp" required name="metodo__contato" value="Whatsapp"/>
-        
-        <h3>Sugestão e reclamação</h3>
-        <label for="mensagem"></label>
-        <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem!" cols="20" rows="10" name="mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+        <div class="input-text">
+            <h3>Sugestão e reclamação</h3>
+            <label for="mensagem"></label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem!" cols="20" rows="10" name="mensagem" required></textarea>
+        </div>
+        <div class="btn-submit">
+            <button type="submit">Enviar</button>
+        </div>
     </form>
 </body>
 </html>
